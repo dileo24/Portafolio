@@ -231,6 +231,7 @@ p {
 }
 @media screen and (max-width: 720px) {
   .menu {
+    top: 10%;
     height: 100%;
   }
 }
