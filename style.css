@@ -475,11 +475,10 @@ p {
 
 .portfolio-modal {
   padding: 1rem;
-  max-width: 350px;
+  max-width: 400px;
   display: flex;
   flex-direction: column;
   background-color: rgb(228, 228, 228);
-  max-height: 700px;
 }
 
 .portfolio-modal h3 {
@@ -545,6 +544,10 @@ p {
   .services .section-title {
     grid-column: span 2;
     /*  ocupe o se desplace dos celdas */
+  }
+
+  .portfolio-modal {
+    max-height: 30%;
   }
 }
 
