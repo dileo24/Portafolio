@@ -199,7 +199,7 @@ p {
 .menu {
   position: fixed;
   left: 0;
-  top: 6.5%;
+  top: 8%;
   bottom: var(--header-height);
   width: 100%;
   background-color: var(--second-color);
@@ -209,7 +209,7 @@ p {
   pointer-events: none;
   /* que no reaccionen los elementos del menu cuando pongo el mouse encima */
   flex-direction: column;
-  height: 36%;
+  height: 40%;
 }
 
 .menu.is-active {
@@ -281,7 +281,7 @@ p {
 
 .modal-close {
   position: absolute;
-  top: 1rem;
+  bottom: 1rem;
   right: 1rem;
 }
 
@@ -524,6 +524,20 @@ p {
 .social-media img {
   width: 2.2rem;
   height: 2.2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .services > .container {
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .services .section-title {
+    grid-column: span 2;
+    /*  ocupe o se desplace dos celdas */
+  }
 }
 
 @media screen and (min-width: 768px) {
