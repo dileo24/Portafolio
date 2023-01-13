@@ -197,19 +197,31 @@ p {
 }
 
 .menu {
-  position: fixed;
+  /*   position: fixed;
   left: 0;
-  top: 5%;
+  top: 8%;
   bottom: var(--header-height);
   width: 100%;
   background-color: var(--second-color);
   display: flex;
   opacity: 0;
   transition: opacity 0.4s ease;
-  pointer-events: none;
+  pointer-events: none; */
   /* que no reaccionen los elementos del menu cuando pongo el mouse encima */
+  /* flex-direction: column;
+  height: 40%; */
+}
+.menu {
+  position: fixed;
+  left: 0rem;
+  bottom: 4rem;
+  width: 100%;
+  background-color: var(--second-color);
+  display: flex;
   flex-direction: column;
-  height: 40%;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
 }
 
 .menu.is-active {
@@ -221,6 +233,7 @@ p {
   padding: 1rem;
   font-size: 1.5rem;
   font-weight: bold;
+  text-align: center;
   text-decoration: none;
   color: var(--first-color);
 }
@@ -229,12 +242,12 @@ p {
   color: var(--white-color);
   background-color: var(--first-color);
 }
-@media screen and (max-width: 720px) {
+/* @media screen and (max-width: 720px) {
   .menu {
     top: 5%;
     height: 100%;
   }
-}
+} */
 
 @media screen and (min-width: 1024px) {
   .menu-btn {
@@ -252,7 +265,8 @@ p {
   }
 
   .menu a {
-    padding: 0.1rem;
+    padding: 0;
+    margin-top: 0.3rem;
   }
 
   .menu a:hover {
@@ -409,7 +423,7 @@ p {
   background-color: var(--third-color);
 }
 
-.header {
+/* .header {
   position: fixed;
   left: 0;
   top: 0;
@@ -418,6 +432,17 @@ p {
   width: 100%;
   height: var(--header-height);
   background-color: var(--second-color);
+} */
+.header {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 50;
+  width: 100%;
+  height: 4rem;
+  background-color: var(--second-color);
+  /* backdrop-filter: blur(15px); */
+  padding: 1rem;
 }
 
 .header > .container {
@@ -625,12 +650,18 @@ p {
     grid-template-columns: repeat(4, 24%);
   }
 
-  .header {
-    position: sticky;
-    /*fijo cuando llega a la altura definido, si no es relativo*/
-    bottom: 0;
+  /*   .header {
+    position: sticky; */
+  /*fijo cuando llega a la altura definido, si no es relativo*/
+  /*   bottom: 0;
     padding: 0.5rem;
     height: calc(var(--header-height) - 0.5rem);
+  } */
+  .header {
+    position: sticky;
+    top: 0;
+    padding: 0.5rem;
+    height: 3rem;
   }
 
   .portfolio > .container {
