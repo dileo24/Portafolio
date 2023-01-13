@@ -199,7 +199,7 @@ p {
 .menu {
   position: fixed;
   left: 0;
-  top: 7%;
+  top: 5%;
   bottom: var(--header-height);
   width: 100%;
   background-color: var(--second-color);
@@ -231,7 +231,7 @@ p {
 }
 @media screen and (max-width: 720px) {
   .menu {
-    top: 10%;
+    top: 5%;
     height: 100%;
   }
 }
