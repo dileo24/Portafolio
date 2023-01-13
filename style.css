@@ -199,7 +199,7 @@ p {
 .menu {
   position: fixed;
   left: 0;
-  top: 8%;
+  top: 7%;
   bottom: var(--header-height);
   width: 100%;
   background-color: var(--second-color);
@@ -544,10 +544,6 @@ p {
   .services .section-title {
     grid-column: span 2;
     /*  ocupe o se desplace dos celdas */
-  }
-
-  .portfolio-modal {
-    max-height: 30%;
   }
 }
 
