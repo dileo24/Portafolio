@@ -454,13 +454,13 @@
                     </svg>
                     <h5>SOCIAL MEDIA</h5>
                     <small class="social-media">
-                        <a href="https://instagram.com/dileo_24">
+                        <a href="https://instagram.com/dileo_24" target="_blank" rel="noopener">
                             <img src="./assets/instagram.svg">
                         </a>
-                        <a href="https://www.linkedin.com/in/joaquindileo/">
+                        <a href="https://www.linkedin.com/in/joaquindileo/" target="_blank" rel="noopener">
                             <img src="./assets/linkedin.svg">
                         </a>
-                        <a href="https://www.github.com/dileo24">
+                        <a href="https://www.github.com/dileo24" target="_blank" rel="noopener">
                             <img src="./assets/github.svg">
                         </a>
                     </small>
@@ -472,11 +472,13 @@
                             fill="#D90062" />
                     </svg>
                     <h5>CORREO</h5>
-                    <h5>Gmail: <a href="mailto:joacodileo@gmail.com">joacodileo@gmail.com</a> </h5>
+                    <h5>Gmail: <a href="mailto:joacodileo@gmail.com" target="_blank" rel="noopener">joacodileo@gmail.com</a> </h5>
                 </aside>
             </article>
 
-            <form class="contact-form box-shadow-1">
+            <form class="contact-form box-shadow-1" action="https://formsubmit.co/joacodileo@gmail.com" method="POST">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
                 <input type="text" name="name" placeholder="Ingrese su nombre..."
                     title="Nombre solo acepta letras y espacios en blanco." pattern="^[A-Za-zÑñÁáÉéÍíÓóÚú\s]+$"
                     required>
@@ -488,7 +490,7 @@
                 </div>
                 <input class="btn" type="submit" value="Enviar Mensaje!">
             </form>
-            <article id="gracias" class="modal">
+            <!-- <article id="gracias" class="modal">
                 <div class="modal-content">
                     <article class="contact-form-response">
                         <h3>Muchas gracias por<br>tu mensaje!</h3>
@@ -502,7 +504,7 @@
 
                     </article>
                 </div>
-            </article>
+            </article> -->
         </div>
     </section>
 
