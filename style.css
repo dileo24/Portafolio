@@ -196,8 +196,7 @@ p {
   fill: var(--first-color);
 }
 
-.menu {
-  /*   position: fixed;
+/*   position: fixed;
   left: 0;
   top: 8%;
   bottom: var(--header-height);
@@ -207,10 +206,9 @@ p {
   opacity: 0;
   transition: opacity 0.4s ease;
   pointer-events: none; */
-  /* que no reaccionen los elementos del menu cuando pongo el mouse encima */
-  /* flex-direction: column;
+/* que no reaccionen los elementos del menu cuando pongo el mouse encima */
+/* flex-direction: column;
   height: 40%; */
-}
 .menu {
   position: fixed;
   left: 0rem;
@@ -569,6 +567,10 @@ p {
   .services .section-title {
     grid-column: span 2;
     /*  ocupe o se desplace dos celdas */
+  }
+
+  .about {
+    margin-top: 0;
   }
 }
 
