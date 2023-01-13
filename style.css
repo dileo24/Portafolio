@@ -478,7 +478,8 @@ p {
   max-width: 400px;
   display: flex;
   flex-direction: column;
-  background-color: var(--white-color);
+  background-color: rgb(228, 228, 228);
+  max-height: 800px;
 }
 
 .portfolio-modal h3 {
